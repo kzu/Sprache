@@ -50,7 +50,7 @@
       
         <Delete Files="@(FilesToDelete)" />
     
-        <Copy SourceFiles="@(FilesToCopy)" DestinationFolder="$(Package)\lib\portable-net4+netcore45+win8+wp8+sl5+MonoAndroid+Xamarin.iOS10+MonoTouch" />
+        <Copy SourceFiles="@(FilesToCopy)" DestinationFolder="$(Package)\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10" />
         
         <GetAssemblyIdentity AssemblyFiles="$(OutputDir)\Sprache.dll">
             <Output TaskParameter="Assemblies" ItemName="AsmInfo" />
